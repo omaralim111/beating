@@ -1,3 +1,4 @@
+
 import logo from './logo.svg';
 import moon from './moon.png';
 import './App.css';
@@ -7,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={moon} className="App-logo" alt="logo" />
-        <p>
+        {/* <p>
           Ramadan <code>Mubarak</code> from the
         </p>
         <a
@@ -17,7 +18,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Alim Family 
-        </a>
+        </a> */}
       </header>
     </div>
   );
