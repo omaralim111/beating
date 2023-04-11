@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={moon} className="App-logo" alt="moon" />
         <p>
-         Edit <code>src/App.js</code> and save to reload.
+         Ramadan <code>Mubarak </code> from
         </p>
         <a
           className="App-link"
@@ -17,7 +17,7 @@ function App() {
           rel="nooener noreferrer"
 
         >
-          Omar Alim
+          The Alim Family 
         </a>
       </header>
     </div>
