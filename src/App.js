@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import moon from './moon.jpeg';
 import './App.css';
 
 function App() {
