@@ -7,10 +7,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={moon} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
+        <p>Edit <code>src/App.js</code> and save to reload.</p>
+        <
           className="App-link"
           href="https://omaralim.eth.limo"
           target="_blank"
