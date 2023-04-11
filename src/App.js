@@ -14,7 +14,8 @@ function App() {
           className="App-link"
           href="https://omaralim.eth.limo"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nooener noreferrer"
+
         >
           Omar Alim
         </a>
