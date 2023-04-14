@@ -4,6 +4,10 @@ import moon from './moon.png';
 import './App.css';
 import Omar_Balance.mp3
 
+const audioClips = [
+  {sound: Omar_Balance, label: 'Omar_Balance'}
+]
+
 function App() {
   return (
     <div className="App">
