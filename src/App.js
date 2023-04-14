@@ -8,10 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={moon} className="App-logo" alt="moon" />
-        <p>
-          const audioClips = [
-          {sound: Omar_Balance.mp3, label: 'Omar_Balance.mp3'}
-          ]
+        <p>      
           <h2> play </h2>
         </p>
         <p>
