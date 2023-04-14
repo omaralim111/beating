@@ -1,12 +1,16 @@
+import react,{Component} from "react";
 import logo from './logo.svg';
 import moon from './moon.png';
 import './App.css';
 
-function App() {
+functio App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={moon} className="App-logo" alt="moon" />
+        <p>
+          <h2> play </h2>
+        </p>
         <p>
          Ramadan <code>Mubarak</code> from
         </p>
