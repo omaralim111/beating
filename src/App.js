@@ -13,9 +13,6 @@ function App() {
         <button src={} className="App-button" alt="moon" />
         </p>        
         <p>
-          <h2> play </h2>
-        </p>
-        <p>
          Ramadan <code>Mubarak</code> from
         </p>
         <a
