@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import moon from './moon.png';
 import './App.css';
 
-functio App() {
+function App() {
   return (
     <div className="App">
       <header className="App-header">
