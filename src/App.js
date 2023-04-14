@@ -10,7 +10,7 @@ function App() {
       <header className="App-header">
         <img src={moon} className="App-logo" alt="moon" />
         <p>      
-          <h2> play </h2>
+         <audio src={balance} className="App-logo" alt="moon" />
         </p>
         <p>
          Ramadan <code>Mubarak</code> from
