@@ -3,11 +3,6 @@ import logo from './logo.svg';
 import moon from './moon.png';
 import './App.css';
 
-
-const audioClips = [
-  {sound: Omar_Balance.mp3, label: 'Omar_Balance.mp3'}
-]
-
 function App() {
   return (
     <div className="App">
