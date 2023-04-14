@@ -4,13 +4,13 @@ import balance from './Omar_Balance.mp3';
 import moon from './moon.png';
 import './App.css';
 
-functio App() {
+function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={moon} className="App-logo" alt="moon" />
         <p>      
-        <button src={balance} className="App-button" alt="moon" />
+        <button src={} className="App-button" alt="moon" />
         </p>        
         <p>
           <h2> play </h2>
