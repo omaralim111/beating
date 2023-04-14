@@ -10,10 +10,8 @@ function App() {
       <header className="App-header">
         <img src={moon} className="App-logo" alt="moon" />
         <p>      
-         <button onClick={() => } className="App-button"  button/>
-        </p>
-        <a
-      
+         <button onClick= className="App-button"  button/>
+        </p>        
         <p>
          Ramadan <code>Mubarak</code> from
         </p>
