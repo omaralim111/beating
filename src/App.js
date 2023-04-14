@@ -2,10 +2,10 @@ import react,{Component} from "react";
 import logo from './logo.svg';
 import moon from './moon.png';
 import './App.css';
-import Omar_Balance.mp3
+
 
 const audioClips = [
-  {sound: Omar_Balance, label: 'Omar_Balance'}
+  {sound: Omar_Balance.mp3, label: 'Omar_Balance.mp3'}
 ]
 
 function App() {
