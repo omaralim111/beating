@@ -4,7 +4,7 @@ import balance from './Omar_Balance.mp3';
 import moon from './moon.png';
 import './App.css';
 
-function App() {
+functio App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -12,6 +12,9 @@ function App() {
         <p>      
         <button src={balance} className="App-button" alt="moon" />
         </p>        
+        <p>
+          <h2> play </h2>
+        </p>
         <p>
          Ramadan <code>Mubarak</code> from
         </p>
