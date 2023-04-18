@@ -5,12 +5,18 @@ import moon from './moon.png';
 import './App.css';
 
 function App() {
+  let audio = new Audio("/Omar_Balance.mp3")
+  
+  const start = () => {
+    audio.play()
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={moon} className="App-logo" alt="moon" />
         <p>      
-        <button src={balance} className="App-button" alt="moon" />
+        <button onClick={start}>Play src={balance} className="App-button" alt="moon" />
         </p>        
         <p>
          Ramadan <code>Mubarak</code> from
