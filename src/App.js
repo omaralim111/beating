@@ -16,7 +16,7 @@ function App() {
       <header className="App-header">
         <img src={moon} className="App-logo" alt="moon" />
         <p>      
-        <button onClick={start}>Play src={balance} className="App-button" alt="moon" />
+        <button onClick={start}>Play </button>
         </p>        
         <p>
          Ramadan <code>Mubarak</code> from
