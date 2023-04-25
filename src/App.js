@@ -19,7 +19,7 @@ function App() {
         <button onClick={start}>Play</button>
         </p>        
         <p>
-         Eid <code> Mubarak</code> from
+         Let <code> It</code> Play
         </p>
         <a
           className="App-link"
