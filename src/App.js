@@ -19,7 +19,7 @@ function App() {
         <button onClick={start}>Play</button>
         </p>        
         <p>
-         Artificially <code> Intelligent</code> Music
+         Art Oficially <code> Intelligent</code> Music
         </p>
         <a
           className="App-link"
