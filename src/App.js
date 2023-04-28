@@ -31,7 +31,14 @@ function App() {
       <header className="App-header">
         <img src={moon} className="App-logo" alt="moon" />
         <p>
-        <button onClick={connectWallet}>{walletAddress.length > 0 ? 'Connected: ${walletAddress.substring(0, 6)}...$}' : "Connect Wallet"}</button>
+        <button 
+          onClick={connectWallet}>
+          <span
+            {walletAddress.length > 0
+              ? 'Connected: ${walletAddress.substring(0, 6)}...${walletAddress.substring(38)}}' 
+              : "Connect Wallet"}
+        </span>
+        </button>
         </p>
         <p>      
         <button onClick={start}>Play</button>
