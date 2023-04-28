@@ -4,11 +4,7 @@ import balance from './Omar_Balance.mp3';
 import moon from './moon.png';
 import './App.css';
 
-function App() {
-  let audio = new Audio("/Omar_Balance.mp3")
-  const start = () => {
-    audio.play()
-  }
+function App() 
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
@@ -23,7 +19,11 @@ function App() {
       console.log("Please Install MetaMask")
     }
   }
-  
+  function App(){
+    let audio = new Audio("/Omar_Balance.mp3")
+    const start = () => {
+      audio.play()
+    }
   
   return (
     <div className="App">
