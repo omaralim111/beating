@@ -4,7 +4,11 @@ import balance from './Omar_Balance.mp3';
 import moon from './moon.png';
 import './App.css';
 
-function App() 
+function App() {
+  let audio = new Audio("/Omar_Balance.mp3")
+  const start = () => {
+    audio.play()
+  }
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
