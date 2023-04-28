@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import react,{Component} from "react";
 import logo from './logo.svg';
 import balance from './Omar_Balance.mp3';
@@ -9,11 +10,13 @@ function App() {
   const start = () => {
     audio.play()
   }
+  const [ walletAddress, setWalletAddres] = useState("");
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
         /* MetaMask is installed */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
+        setWalletAddress(accounts[0]);
         console.log(accounts[0]);
       }catch(err) {
         console.error(err.message);
@@ -28,7 +31,7 @@ function App() {
       <header className="App-header">
         <img src={moon} className="App-logo" alt="moon" />
         <p>
-        <button onClick={connectWallet}>Connect Wallet</button>
+        <button onClick={connectWallet}>{walletAddress.length > 0 ? 'Connected: ${walletAddress.substring(0, 6)}...$}' : "Connect Wallet"}</button>
         </p>
         <p>      
         <button onClick={start}>Play</button>
