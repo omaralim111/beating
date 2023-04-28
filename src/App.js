@@ -19,12 +19,6 @@ function App()
       console.log("Please Install MetaMask")
     }
   }
-  function App(){
-    let audio = new Audio("/Omar_Balance.mp3")
-    const start = () => {
-      audio.play()
-    }
-  
   return (
     <div className="App">
       <header className="App-header">
