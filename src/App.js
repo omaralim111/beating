@@ -35,7 +35,7 @@ function App() {
         <button onClick={start}>Play</button>
         </p>        
         <p>
-        Art  <code>  Officially </code> Intelligent
+         Art  <code>  Officially </code> Intelligent
         </p>
         <a
           className="App-link"
