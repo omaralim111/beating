@@ -34,7 +34,7 @@ function App() {
         <button 
           onClick={connectWallet}
         >
-          <span
+          <span>
             {walletAddress.length > 0
               ? 'Connected: ${walletAddress.substring(0, 6)}...${walletAddress.substring(38)}}' 
               : "Connect Wallet"}
