@@ -36,7 +36,7 @@ function App() {
         >
           <span>
             {walletAddress.length > 0
-              ? 'Connected: ${walletAddress.substring(0, 6)}...${walletAddress.substring(38)}' 
+              ? 'Connected: ${walletAddress.substring(0, 6)}...${walletAddress.substring(38)}}' 
               : "Connect Wallet"}
         </span>
         </button>
