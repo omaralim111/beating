@@ -13,7 +13,7 @@ function App() {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
         /* MetaMask is installed */
-        const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
+        const accounts = await window.ethereum.request({ method: "eth_accounts"});
         console.log(accounts[0]);
       }catch(err) {
         console.error(err.message);
