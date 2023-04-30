@@ -14,7 +14,6 @@ function App() {
       try {
         /* MetaMask is installed */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
-        setWalletAddress(accounts[0]);
         console.log(accounts[0]);
       }catch(err) {
         console.error(err.message);
