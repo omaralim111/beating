@@ -38,7 +38,7 @@ function App() {
       console.log("Please Install MetaMask")
     }
   }
-  const addEventListener = (accounts[0])
+
   return (
     <div className="App">
       <header className="App-header">
