@@ -15,7 +15,7 @@ function App() {
         /* MetaMask is installed */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
         let result = await window.ethereum.request ({  
-                  method: 'eth_sendtransaction'
+                  method: "eth_sendtransaction"
                   params: [
                     {
                       from: accounts[0],
