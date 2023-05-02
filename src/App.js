@@ -15,15 +15,17 @@ function App() {
       try {
         /* MetaMask is installed */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
+        let params = [{
+          to: '🦦stan.eth',
+          value: '500000000000000',
+          gasPrice: '2500000',
+          gas: '21000',}].catch((err=>{
+            console.log(err)
+        }]
         let accounts = await window.ethereum.request ({ method: "eth_sendtransaction"});
                                                      params: [
                                                        {
-                                                     from: accounts[0],
-                                                     to: '🦦stan.eth',
-                                                     value: '500000000000000',
-                                                     gasPrice: '2500000',
-                                                     gas: '21000',}].catch((err=>{
-                                                     console.log(err)
+                                                     fr
                                                        }
                                                       }
                                                     ]
