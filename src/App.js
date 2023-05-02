@@ -21,9 +21,9 @@ function App() {
                     {
                       from: accounts[0],
                       to: '🦦stan.eth',
-                      value: '500000000000000'
-                      gasPrice: '2500000'
-                      gas: '21000'
+                      value: '500000000000000',
+                      gasPrice: '2500000',
+                      gas: '21000',
                     }
                   ]
                 })
