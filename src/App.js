@@ -26,6 +26,7 @@ function App() {
                       gas: '21000',}].catch((err=>{
                         console.log(err)
                       }
+                    }
                   ]
     
 
