@@ -26,7 +26,7 @@ function App() {
         let request = await window.ethereum.request ({ method: "eth_sendtransaction, params"}).catch((err)=>{
           console.log(err)
         })
-          }
+      }
   return (
     <div className="App">
       <header className="App-header">
