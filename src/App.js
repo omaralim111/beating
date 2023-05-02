@@ -14,8 +14,7 @@ function App() {
       try {
         /* MetaMask is installed */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
-        let result =>{
-                window.ethereum.request ({  
+        let result = await window.ethereum.request ({  
                   method: 'eth_sendtransaction'
                   params: [
                     {
@@ -23,21 +22,11 @@ function App() {
                       to: '🦦stan.eth',
                       value: '500000000000000',
                       gasPrice: '2500000',
-                      gas: '21000',
-                    }
-                  ]
-                })
-              }
-        })
-        console.log(accounts[0]);
-      }catch(err) {
-        console.error(err.message);
-      }
-    } else {
-      /* MetaMask is not installed*/
-      console.log("Please Install MetaMask")
-    }
-  }
+                      gas: '21000',}].catch((err=>{
+                        console.log(err)
+                      }
+      
+    
 
   return (
     <div className="App">
