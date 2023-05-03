@@ -6,6 +6,7 @@ import moon from './moon.png';
 import './App.css';
 
 function App() {
+  const [ walletAdress, setWalletAdress ] = useState ("");
   let audio = new Audio("/Omar_Balance.mp3")
   const start = () => {
     audio.play()
