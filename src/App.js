@@ -22,7 +22,7 @@ function App() {
     const accounts = await window.ethereum.send ({ method : "eth_sendTransaction",params}).catch((err)=>{
       console.log(err)
     }
-   }
+  }
 
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
@@ -35,11 +35,12 @@ function App() {
           value: '500000000000000',
           gasPrice: '2500000',
           gas: '21000',}]
-            console.log(err)
-        }]
+            console.log(err);
+        
         let accounts = await window.ethereum.send ({ method: "eth_sendtransaction, params"}).catch((err)=>{
           console.log(err)
         })
+      }
     }
   return (
     <div className="App">
