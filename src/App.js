@@ -35,8 +35,8 @@ function App() {
         let request = await window.ethereum.send({ method: "eth_sendTransaction, params"});
         const provider = new ethers.providers(window.ethereum);
         const signer = providers.getsigner();
-          ethers.utitls.getAddress(addr);
-          const tx = await signer.sendTransaction({
+        ethers.utitls.getAddress(addr);
+        const tx = await signer.sendTransaction({
             to: addr
       } catch (err) {
         console.log(console.log(err.message))
