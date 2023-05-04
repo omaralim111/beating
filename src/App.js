@@ -32,7 +32,7 @@ function App() {
       try {
         /* MetaMask is installed */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
-        let accounts = await window.ethereum.send({ method: "eth_sendTransaction, params"}
+        let accounts = await window.ethereum.send({ method: "eth_sendTransaction, params"});
           const provider = new ethers.providers(window.ethereum);
           const signer = providers.getsigner();
           ethers.utitls.getAddress(addr);
