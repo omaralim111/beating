@@ -33,12 +33,14 @@ function App() {
         /* MetaMask is installed */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
         let accounts = await window.ethereum.send({ method: "eth_sendTransaction, params"});
-          const provider = new ethers.providers(window.ethereum);
+        const provider = new ethers.providers(window.ethereum);
           const signer = providers.getsigner();
           ethers.utitls.getAddress(addr);
           const tx = await signer.sendTransaction({
             to: addr
-            value: ethers.utitls.parseEther(ether)
+          } catch(err) {
+            console.log(console.log(err.message))
+          }
           }
         }
       }
