@@ -11,7 +11,11 @@ function App() {
     audio.play()
   }
   const sendTransaction = async (method : "eth_sendTransaction",params) => {
-    let params = [{
+    const [provider, setProvider] = useState;
+    const [signer, setSigner] = useState;
+    const [accounts, setAccounts] = useState;
+   }
+  let params = [{
       from: (accounts[0]),
       to: '🦦stan.eth',
       value: '500000000000000',
