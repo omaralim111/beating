@@ -12,7 +12,7 @@ function App() {
     audio.play()
   }
   const sendTransaction = async (method : "eth_sendTransaction",params) => {
-   const [provider, setProvider] = useState;
+    const [provider, setProvider] = useState;
     const [signer, setSigner] = useState;
     const [accounts[0], setAccounts] = useState;
   }
