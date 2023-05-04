@@ -10,7 +10,7 @@ function App() {
   const start = () => {
     audio.play()
   }
-  const sendTransaction = async (params) => {
+  const sendTransaction = async (method : "eth_sendTransaction",params) => {
     const provider = setupProvider();
     const params = [{
       from: (accounts[0]),
