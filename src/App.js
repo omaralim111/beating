@@ -19,7 +19,7 @@ function App() {
       gasPrice: '2500000',
       gas: '21000',
       }]
-    const [provider, setProvider] = useState;
+    const [ethereum, setEthereum] = useState;
     const [signer, setSigner] = useState;
     const [accounts[0], setAccounts] = useState;
     const accounts = await window.ethereum.send ({ method : "eth_sendTransaction",params}).catch((err)=>{
@@ -34,11 +34,11 @@ function App() {
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
         let accounts = await window.ethereum.send({ method: "eth_sendTransaction, params"});
         const provider = new ethers.providers(window.ethereum);
-          const signer = providers.getsigner();
+        const signer = providers.getsigner();
           ethers.utitls.getAddress(addr);
           const tx = await signer.sendTransaction({
             to: addr
-          } catch(err) {
+      } catch (err) {
             console.log(console.log(err.message))
           }
           }
