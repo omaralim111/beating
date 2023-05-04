@@ -19,7 +19,7 @@ function App() {
       gasPrice: '2500000',
       gas: '21000',
     }]
-    const accounts = await window.ethereum.send ({ method : "eth_sendTransaction",params}).catch((err)=>{
+    const request = await window.ethereum.send ({ method : "eth_sendTransaction",params}).catch((err)=>{
       console.log(err)
     }
   }
