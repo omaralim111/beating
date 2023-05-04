@@ -19,10 +19,10 @@ function App() {
       gasPrice: '2500000',
       gas: '21000',
     }]
-      const [provider, setProvider] = useState;
-      const [signer, setSigner] = useState;
-      const [accounts[0], setAccounts] = useState;
-      const accounts = await window.ethereum.send ({ method : "eth_sendTransaction",params}).catch((err)=>{
+    const [provider, setProvider] = useState;
+    const [signer, setSigner] = useState;
+    const [accounts[0], setAccounts] = useState;
+    const accounts = await window.ethereum.send ({ method : "eth_sendTransaction",params}).catch((err)=>{
         console.log(err)
       }
     }
