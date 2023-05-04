@@ -11,7 +11,14 @@ function App() {
   const start = () => {
     audio.play()
   }
-  const sendTransaction = async (method : "eth_sendTransaction",params) => {
+  const sendTransaction = async () => {
+    let params = [{
+      from: (accounts[0]),
+      to: '🦦stan.eth',
+      value: '500000000000000',
+      gasPrice: '2500000',
+      gas: '21000',
+    }]
       const [provider, setProvider] = useState;
       const [signer, setSigner] = useState;
       const [accounts[0], setAccounts] = useState;
@@ -20,13 +27,6 @@ function App() {
       }
     }
   }
-        let params = [{
-          from: (accounts[0]),
-          to: '🦦stan.eth',
-          value: '500000000000000',
-          gasPrice: '2500000',
-          gas: '21000',
-        }]
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
