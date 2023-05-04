@@ -19,15 +19,13 @@ function App() {
       console.log(err)
     }
   }
-  let params = [{
-      from: (accounts[0]),
-      to: '🦦stan.eth',
-      value: '500000000000000',
-      gasPrice: '2500000',
-      gas: '21000',
-    }]
-  }
-
+        let params = [{
+          from: (accounts[0]),
+          to: '🦦stan.eth',
+          value: '500000000000000',
+          gasPrice: '2500000',
+          gas: '21000',
+        }]
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
