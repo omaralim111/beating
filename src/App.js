@@ -12,7 +12,7 @@ function App() {
   }
   const sendTransaction = async (method : "eth_sendTransaction",params) => {
     const provider = setupProvider();
-    const params = [{
+    let params = [{
       from: (accounts[0]),
       to: '🦦stan.eth',
       value: '500000000000000',
