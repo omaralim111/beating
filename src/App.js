@@ -13,7 +13,7 @@ function App() {
   const sendTransaction = async (method : "eth_sendTransaction",params) => {
     const [provider, setProvider] = useState;
     const [signer, setSigner] = useState;
-    const [accounts, setAccounts] = useState;
+    const [accounts[0], setAccounts] = useState;
   }
   let params = [{
       from: (accounts[0]),
