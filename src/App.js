@@ -39,10 +39,8 @@ function App() {
         const tx = await signer.sendTransaction({
             to: addr
       } catch (err) {
-        console.log(console.log(err.message))
+        console.log(console.log(err.message));
       }
-          }
-        }
       }
     }
   return (
