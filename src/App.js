@@ -18,30 +18,29 @@ function App() {
       value: '500000000000000',
       gasPrice: '2500000',
       gas: '21000',
-    }]
+      }]
     const [provider, setProvider] = useState;
     const [signer, setSigner] = useState;
     const [accounts[0], setAccounts] = useState;
     const accounts = await window.ethereum.send ({ method : "eth_sendTransaction",params}).catch((err)=>{
         console.log(err)
       }
-    }
+    } 
   }
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
         /* MetaMask is installed */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
-        const provider = new ethers.providers(window.ethereum);
-        const signer = providers.getsigner();
-        ethers.utitls.getAddress(addr);
-        const tx = await signer.sendTransaction({
-          to: addr
-          value: ethers.utitls.parseEther(ether)
-        })
-        let accounts = await window.ethereum.send({ method: "eth_sendTransaction, params"}).catch((err)=>{
-          console.log(err)
-        })
+        let accounts = await window.ethereum.send({ method: "eth_sendTransaction, params"}
+          const provider = new ethers.providers(window.ethereum);
+          const signer = providers.getsigner();
+          ethers.utitls.getAddress(addr);
+          const tx = await signer.sendTransaction({
+            to: addr
+            value: ethers.utitls.parseEther(ether)
+          }
+        }
       }
     }
   return (
