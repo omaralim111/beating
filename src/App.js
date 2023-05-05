@@ -11,7 +11,7 @@ function App() {
   const start = () => {
     audio.play()
   }
-  const sendTransaction = async () => {
+ /* const sendTransaction = async () => {
     const [ethereum, setEthereum] = useState;
     const [signer, setSigner] = useState;
     const [accounts[0], setAccounts] = useState;
@@ -19,7 +19,7 @@ function App() {
         console.log(err)
       }
     } 
-  }
+  */}
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
