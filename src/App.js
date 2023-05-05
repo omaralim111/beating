@@ -24,13 +24,13 @@ function App() {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
         /* MetaMask is installed */
-        let params = [{
+/*        let params = [{
           from: (accounts[0]),
           to: '🦦stan.eth',
           value: '500000000000000',
           gasPrice: '2500000',
           gas: '21000',
-        }]
+        }] */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
 /*        let request = await window.ethereum.send({ method: "eth_sendTransaction, params"});
         const provider = new ethers.providers(window.ethereum);
