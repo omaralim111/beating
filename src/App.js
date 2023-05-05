@@ -38,9 +38,17 @@ function App() {
         ethers.utitls.getAddress(addr);
         const tx = await signer.sendTransaction({method: "eth_sendTransaction, params"});
             to: addr */
-       }
-     }
-  }
+            console.log(accounts[0]);
+          }catch(err) {
+            console.error(err.message);
+          }
+        } else {
+          /* MetaMask is not installed*/
+          console.log("Please Install MetaMask")
+        }
+      } 
+
+
   return (
     <div className="App">
       <header className="App-header">
