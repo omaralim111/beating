@@ -38,10 +38,8 @@ function App() {
         ethers.utitls.getAddress(addr);
         const tx = await signer.sendTransaction({method: "eth_sendTransaction, params"});
             to: addr */
-        } catch (err) {
-            console.log(console.log(err.message));
-          }
-    }
+       }
+     }
   }
   return (
     <div className="App">
