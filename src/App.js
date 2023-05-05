@@ -38,11 +38,11 @@ function App() {
         ethers.utitls.getAddress(addr);
         const tx = await signer.sendTransaction({
             to: addr
-      } catch (err) {
-        console.log(console.log(err.message));
-      }
-      }
+        } catch (err) {
+            console.log(console.log(err.message));
+          }
     }
+  }
   return (
     <div className="App">
       <header className="App-header">
