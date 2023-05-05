@@ -1,5 +1,5 @@
-/*import ethers, from 'ethers';
-import react, {useState} from 'react';*/
+import ethers, from 'ethers';
+import react, {useState} from 'react';
 import react,{Component} from 'react';
 import logo from './logo.svg';
 import balance from './Omar_Balance.mp3';
@@ -11,6 +11,7 @@ function App() {
   const start = () => {
     audio.play()
   }
+  const [provider, setProvider] = useState;
  /* const sendTransaction = async () => {
     const [ethereum, setEthereum] = useState;
     const [signer, setSigner] = useState;
@@ -32,9 +33,9 @@ function App() {
           gas: '21000',
         }] */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
-/*        let request = await window.ethereum.send({ method: "eth_sendTransaction, params"});
+/*        let request = await window.ethereum.send({ method: "eth_sendTransaction, params"});*/
         const provider = new ethers.providers(window.ethereum);
-        const signer = providers.getsigner();
+/*        const signer = providers.getsigner();
         ethers.utitls.getAddress(addr);
         const tx = await signer.sendTransaction({method: "eth_sendTransaction, params"});
             to: addr */
