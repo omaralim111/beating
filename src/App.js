@@ -1,5 +1,5 @@
-import ethers, from 'ethers';
-import react, {useState} from 'react';
+/*import ethers, from 'ethers';
+import react, {useState} from 'react';*/
 import react,{Component} from 'react';
 import logo from './logo.svg';
 import balance from './Omar_Balance.mp3';
