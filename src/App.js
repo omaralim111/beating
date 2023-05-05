@@ -12,7 +12,6 @@ function App() {
     audio.play()
   }
   const sendTransaction = async () => {
-    
     const [ethereum, setEthereum] = useState;
     const [signer, setSigner] = useState;
     const [accounts[0], setAccounts] = useState;
