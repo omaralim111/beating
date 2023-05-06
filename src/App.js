@@ -31,8 +31,8 @@ function App() {
           gas: '21000',
         }] */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
-          let request = await window.ethereum.send({ method: "eth_sendTransaction, params"});
-/*         let provider = new window.ethereum.providers(window.ethereum);*/
+/*          let request = await window.ethereum.send({ method: "eth_sendTransaction, params"});*/
+          let provider = new window.ethereum.providers(window.ethereum);
 /*        const signer = providers.getsigner();
         ethers.utitls.getAddress(addr);
         const tx = await signer.sendTransaction({method: "eth_sendTransaction, params"});
