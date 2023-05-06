@@ -46,8 +46,6 @@ function App() {
           console.log("Please Install MetaMask")
         }
       } 
-
-
   return (
     <div className="App">
       <header className="App-header">
