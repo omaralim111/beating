@@ -32,7 +32,7 @@ function App() {
         }] */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
 /*        let request = await window.ethereum.send({ method: "eth_sendTransaction, params"});*/
-        const provider = new window.ethereum.providers(window.ethereum);
+          let provider = new window.ethereum.providers(window.ethereum);
 /*        const signer = providers.getsigner();
         ethers.utitls.getAddress(addr);
         const tx = await signer.sendTransaction({method: "eth_sendTransaction, params"});
