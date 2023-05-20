@@ -9,8 +9,8 @@ function App() {
   const start = () => {
     audio.play()
   }
-/*  const [provider, setProvider] = useState;
-  const sendTransaction = async () => {
+  const [provider, setProvider] = useState;
+/*  const sendTransaction = async () => {
     const [ethereum, setEthereum] = useState;
     const [signer, setSigner] = useState;
     const [accounts[0], setAccounts] = useState;
@@ -32,7 +32,7 @@ function App() {
         }] */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
 /*          let request = await window.ethereum.send({ method: "eth_sendTransaction, params"});*/
-/*          let provider = new window.ethereum.providers(window.ethereum);*/
+          let provider = new window.ethereum.providers(window.ethereum);
 /*        const signer = providers.getsigner();
         ethers.utitls.getAddress(addr);
         const tx = await signer.sendTransaction({method: "eth_sendTransaction, params"});
