@@ -9,8 +9,8 @@ function App() {
   const start = () => {
     audio.play()
   }
-  const [provider, setProvider] = useState;
-/*  const sendTransaction = async () => {
+/*  const [provider, setProvider] = useState;
+  const sendTransaction = async () => {
     const [ethereum, setEthereum] = useState;
     const [signer, setSigner] = useState;
     const [accounts[0], setAccounts] = useState;
