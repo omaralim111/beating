@@ -44,7 +44,7 @@ function App() {
         const signer = providers.getsigner(window.ethereum);
         const tx = await signer.sendTransaction({
           to: addr,
-          value: ethers.utils.parsedEthers(ether)
+          value: ethers.utils.parsedEther(ether)
         })
 /*          let request = await window.ethereum.send({ method: "eth_sendTransaction, params"});*/
 /*          let provider = new window.ethereum.providers(window.ethereum);*/
