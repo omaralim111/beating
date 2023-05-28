@@ -1,4 +1,5 @@
 import react, {useState} from 'react';
+import {ethers} from 'ethers';
 import logo from './logo.svg';
 import balance from './Omar_Balance.mp3';
 import moon from './moon.png';
@@ -31,6 +32,15 @@ function App() {
           gas: '21000',
         }] */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = providers.getsigner(window.ethereum);
+        const tx = await signer.sendTransaction({
+          from: (accounts[0]),
+          to: '🦦stan.eth',
+          value: '500000000000000',
+          gasPrice: '2500000',
+          gas: '21000',
+        })
 /*          let request = await window.ethereum.send({ method: "eth_sendTransaction, params"});*/
 /*          let provider = new window.ethereum.providers(window.ethereum);*/
 /*        const signer = providers.getsigner();
