@@ -10,16 +10,15 @@ function App() {
   const start = () => {
     audio.play()
   }
-/*  const [provider, setProvider] = useState;
+  const [provider, setProvider] = useState;
   const sendTransaction = async () => {
     const [ethereum, setEthereum] = useState;
     const [signer, setSigner] = useState;
-    const [accounts[0], setAccounts] = useState;
     const accounts = await window.ethereum.send ({ method : "eth_sendTransaction",params}).catch((err)=>{
         console.log(err)
       }
     } 
-  }*/
+  }
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
