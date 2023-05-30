@@ -11,7 +11,7 @@ function App() {
     audio.play()
   }
 }
-  const [provider, setProvider] = useState;
+/*  const [provider, setProvider] = useState;
   const [signer, setSigner] = useState;
   const sendTransaction = async () => {
     from: (accounts[0]);
@@ -19,7 +19,7 @@ function App() {
     value: '50000000000000';
     gasPrice: '2500000';
     gas: '21000';
-  }
+  }*/
 
 /*  const sendTransaction = async () => {
     const [ethereum, setEthereum] = useState;
@@ -41,12 +41,12 @@ function App() {
           gas: '21000',
         }] */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
-        const provider = new window.ethereum.providers(window.ethereum);
+/*        const provider = new window.ethereum.providers(window.ethereum);
         const signer = providers.getsigner(window.ethereum);
         const tx = await signer.sendTransaction({
           to: addr,
           value: ethers.utils.parsedEther(ether)
-        })
+        })*/
 /*          let request = await window.ethereum.send({ method: "eth_sendTransaction, params"});*/
 /*          let provider = new window.ethereum.providers(window.ethereum);*/
 /*        const signer = providers.getsigner();
