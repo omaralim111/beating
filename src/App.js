@@ -14,7 +14,7 @@ function App() {
   const [signer, setSigner] = useState;
   const sendTransaction = async () => {
     from: (accounts[0]);
-    to: '🦦stan.eth';
+    to: '0x058508d2ACFe10652072948A60B7286bd1acEC9d';
     value: '50000000000000';
     gasPrice: '2500000';
     gas: '21000';
