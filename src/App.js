@@ -10,7 +10,8 @@ function App() {
   const start = () => {
     audio.play()
   }
- ]
+}
+  const [provider, setProvider] = useState;
   const [signer, setSigner] = useState;
   const sendTransaction = async () => {
     from: (accounts[0]);
