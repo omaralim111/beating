@@ -16,7 +16,7 @@ function App() {
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
         console.log(accounts[0]);
       }catch(err) {
-          console.error(err.message);
+        console.error(err.message);
       }
     }else {
       console.log("Please Install MetaMask")
