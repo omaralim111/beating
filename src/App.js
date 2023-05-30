@@ -11,54 +11,15 @@ function App() {
     audio.play()
   }
 }
-/*  const [provider, setProvider] = useState;
-  const [signer, setSigner] = useState;
-  const sendTransaction = async () => {
-    from: (accounts[0]);
-    to: '0x058508d2ACFe10652072948A60B7286bd1acEC9d';
-    value: '50000000000000';
-    gasPrice: '2500000';
-    gas: '21000';
-  }*/
-
-/*  const sendTransaction = async () => {
-    const [ethereum, setEthereum] = useState;
-    const [signer, setSigner] = useState;
-    const accounts = await window.ethereum.send ({ method : "eth_sendTransaction",params}).catch((err)=>{
-        console.log(err)
-      }
-    } 
-  }*/
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
-        /* MetaMask is installed */
-/*        let params = [{
-          from: (accounts[0]),
-          to: '🦦stan.eth',
-          value: '500000000000000',
-          gasPrice: '2500000',
-          gas: '21000',
-        }] */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
-/*        const provider = new window.ethereum.providers(window.ethereum);
-        const signer = providers.getsigner(window.ethereum);
-        const tx = await signer.sendTransaction({
-          to: addr,
-          value: ethers.utils.parsedEther(ether)
-        })*/
-/*          let request = await window.ethereum.send({ method: "eth_sendTransaction, params"});*/
-/*          let provider = new window.ethereum.providers(window.ethereum);*/
-/*        const signer = providers.getsigner();
-        ethers.utitls.getAddress(addr);
-        const tx = await signer.sendTransaction({method: "eth_sendTransaction, params"});
-            to: addr */
-            console.log(accounts[0]);
-          }catch(err) {
-            console.error(err.message);
-          }
+        console.log(accounts[0]);
+      }catch(err) {
+          console.error(err.message);
+      }
         } else {
-          /* MetaMask is not installed*/
           console.log("Please Install MetaMask")
         }
       } 
