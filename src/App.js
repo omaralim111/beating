@@ -1,4 +1,3 @@
-import react, {useState} from 'react';
 import logo from './logo.svg';
 import balance from './Omar_Balance.mp3';
 import moon from './moon.png';
