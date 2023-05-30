@@ -10,7 +10,7 @@ function App() {
   const start = () => {
     audio.play()
   }
-  const [provider, setProvider] = useState;
+ ]
   const [signer, setSigner] = useState;
   const sendTransaction = async () => {
     from: (accounts[0]);
@@ -40,7 +40,7 @@ function App() {
           gas: '21000',
         }] */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const provider = new window.ethereum.providers(window.ethereum);
         const signer = providers.getsigner(window.ethereum);
         const tx = await signer.sendTransaction({
           to: addr,
