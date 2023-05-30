@@ -1,5 +1,4 @@
 import react, {useState} from 'react';
-/*import {ethers} from 'ethers';*/
 import logo from './logo.svg';
 import balance from './Omar_Balance.mp3';
 import moon from './moon.png';
