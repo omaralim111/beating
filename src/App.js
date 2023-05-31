@@ -14,6 +14,9 @@ function App() {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
+        .then(results => {
+          {start};
+        })
         console.log(accounts[0]);
       }catch(err) {
         console.error(err.message);
