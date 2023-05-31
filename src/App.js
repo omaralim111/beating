@@ -18,9 +18,9 @@ function App() {
       }catch(err) {
         console.error(err.message);
       }
-      }else {
-        console.log("Please Install MetaMask")
-      }
+        }else {
+          console.log("Please Install MetaMask")
+        }
   } 
   return (
     <div className="App">
