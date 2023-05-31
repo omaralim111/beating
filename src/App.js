@@ -12,7 +12,7 @@ function App() {
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
-        const accounts = await window.ethereum.request({ method: "eth_requestAccounts"})
+        const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
         console.log(accounts[0]);
       } catch(err) {
         console.error(err.message);
