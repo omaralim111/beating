@@ -18,7 +18,7 @@ function App() {
       }catch(err) {
         console.error(err.message);
       }
-    }else {
+    } else {
       /* MetaMask is not installed */
       console.log("Please Install MetaMask")
     }
