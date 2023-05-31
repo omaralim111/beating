@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import balance from './Omar_Balance.mp3';
 import moon from './moon.png';
-import './App.css';
+import "./App.css";
 
 function App() {
   let audio = new Audio("/Omar_Balance.mp3")
