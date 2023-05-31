@@ -15,12 +15,12 @@ function App() {
       try {
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
         console.log(accounts[0]);
-      }catch(err) {
+      } catch(err) {
         console.error(err.message);
       }
     } else {
       /* MetaMask is not installed */
-      console.log("Please Install MetaMask")
+      console.log("Please Install MetaMask");
     }
   } 
   return (
