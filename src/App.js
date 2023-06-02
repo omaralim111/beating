@@ -53,7 +53,7 @@ function App() {
       setError,
       setTxs,
     })
-  }*/
+  }
     
   return (
     <div className="App">
