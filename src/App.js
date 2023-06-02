@@ -7,19 +7,6 @@ import React from 'react';
 import ErrorMessage from "./ErrorMessage";
 import TxList from "./TxList";
 
-/*const sendTransaction = async ({ setError, setTxs, ether, addr }) => {
-  try {
-    from: accounts[0], // The user's active address.
-    to: '0x058508d2ACFe10652072948A60B7286bd1acEC9d', // Required except during contract publications.
-    value: '0x29a2241af62c0000', // Only required to send ether to the recipient from the initiating external account.
-    gasPrice: '0x09184e72a000', // Customizable by the user during MetaMask confirmation.
-    gas: '0x2710', 
-    console.log({ ether, addr });
-  } catch (err){
-    setError(err.message);
-  }
-};*/
-
 function App() {
   let audio = new Audio("/Omar_Balance.mp3")
   const start = () => {
@@ -34,6 +21,7 @@ function App() {
       try {
         /* MetaMask is not installed */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
+        const provider = new ethers.providers(window.ethereum);
         setwalletAddress(accounts[0]);
         setSigner(accounts[0]);
         console.log(accounts[0]);
