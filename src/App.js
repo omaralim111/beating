@@ -20,7 +20,7 @@ function App() {
   const start = () => {
     audio.play()
   }
-  const [error, setError] = useState();
+  const [error, setError] = useState("");
   const [txs, setTxs] = useState([]);
   const [signer, setSigner] = useState("");
   const [ walletAddress, setwalletAddress] = useState("");
