@@ -14,13 +14,9 @@ function App() {
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
-<<<<<<< HEAD
         const accounts = await window.ethereum.request({method: "eth_requestAccounts"});
-        
-=======
         /* MetaMask is not installed */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
->>>>>>> b3b91a0d26d143724792aa0dcc8f867c75450400
         setwalletAddress(accounts[0]);
         setSigner(accounts[0]);
         console.log(accounts[0]);
