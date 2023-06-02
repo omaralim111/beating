@@ -7,7 +7,7 @@ import React from 'react';
 import ErrorMessage from "./ErrorMessage";
 import TxList from "./TxList";
 
-const startPayment = async ({ setError, setTxs, ether, addr }) => {
+const sendTransaction = async ({ setError, setTxs, ether, addr }) => {
   try {
     console.log({ ether, addr });
   } catch (err){
