@@ -4,8 +4,8 @@ import balance from './Omar_Balance.mp3';
 import moon from './moon.png';
 import './App.css';
 import React from 'react';
-/*import ErrorMessage from "./ErrorMessage";
-import TxList from "./TxList";*/
+import ErrorMessage from "./ErrorMessage";
+import TxList from "./TxList";
 
 /*const sendTransaction = async ({ setError, setTxs, ether, addr }) => {
   try {
@@ -25,8 +25,8 @@ function App() {
   const start = () => {
     audio.play()
   }
-  /*const [error, setError] = useState("");
-  const [txs, setTxs] = useState([]);*/
+  const [error, setError] = useState("");
+  const [txs, setTxs] = useState([]);
   const [signer, setSigner] = useState("");
   const [ walletAddress, setwalletAddress] = useState("");
   const connectWallet = async() => {
@@ -45,7 +45,7 @@ function App() {
       console.log("Please Install MetaMask");
     }
   } 
- /* const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const data = new FormData(e.target);
     setError();
