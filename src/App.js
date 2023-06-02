@@ -9,7 +9,7 @@ function App() {
   const start = () => {
     audio.play()
   }
-  const [ walletAddres, setwalletAddress] = useState("");
+  const [ walletAddress, setwalletAddress] = useState("");
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
