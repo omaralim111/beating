@@ -25,6 +25,7 @@ function App() {
         /*const provider = new ethers.providers(window.ethereum);*/
         setwalletAddress(accounts[0]);
         setSigner(accounts[0]);
+        setProvider(accounts[0]);
         console.log(accounts[0]);
       } catch(err) {
         console.error(err.message);
