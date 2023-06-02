@@ -22,12 +22,14 @@ function App() {
       console.log("Please Install MetaMask");
     }
   } 
+    const sendTransaction = async () => {}
+    
   return (
     <div className="App">
       <header className="App-header">
         <img src={moon} className="App-logo" alt="moon" />
         <p>
-        <button onClick={connectWallet}>Connect Wallet</button>
+        <button onClick={(connectWallet)=>{sendtTransaction}}>Connect Wallet</button>
         </p>
         <p>      
         <button onClick={start}>Play</button>
