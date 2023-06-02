@@ -18,6 +18,8 @@ function App() {
   const start = () => {
     audio.play()
   }
+  const [error, setError] = useState();
+  const [txs, setTxs] = useState([]);
   const [signer, setSigner] = useState("");
   const [ walletAddress, setwalletAddress] = useState("");
   const connectWallet = async() => {
@@ -36,6 +38,15 @@ function App() {
       console.log("Please Install MetaMask");
     }
   } 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = new FormData(e.target);
+    setError();
+    await startPayment({
+      setError,
+      setTxs,
+    })
+  }
     
   return (
     <div className="App">
