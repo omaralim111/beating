@@ -4,8 +4,8 @@ import balance from './Omar_Balance.mp3';
 import moon from './moon.png';
 import './App.css';
 import React from 'react';
-import ErrorMessage from "./ErrorMessage";
-import TxList from "./TxList";
+/*import ErrorMessage from "./ErrorMessage";
+import TxList from "./TxList";*/
 
 /*const sendTransaction = async ({ setError, setTxs, ether, addr }) => {
   try {
