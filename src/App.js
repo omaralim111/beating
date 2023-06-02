@@ -45,7 +45,7 @@ function App() {
       console.log("Please Install MetaMask");
     }
   } 
-  const handleSubmit = async (e) => {
+ /* const handleSubmit = async (e) => {
     e.preventDefault();
     const data = new FormData(e.target);
     setError();
@@ -53,7 +53,7 @@ function App() {
       setError,
       setTxs,
     })
-  }
+  }*/
     
   return (
     <div className="App">
