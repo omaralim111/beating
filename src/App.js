@@ -24,7 +24,6 @@ function App() {
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
         /*const provider = new ethers.providers(window.ethereum);*/
         setwalletAddress(accounts[0]);
-        setprovider(accounts[0]);
         setSigner(accounts[0]);
         console.log(accounts[0]);
       } catch(err) {
