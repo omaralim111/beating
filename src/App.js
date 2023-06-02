@@ -9,10 +9,12 @@ function App() {
   const start = () => {
     audio.play()
   }
+  const [ walletAddres, setwalletAddress] = useState("");
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
+        setwalletAddress(accounts[0]);
         console.log(accounts[0]);
       } catch(err) {
         console.error(err.message);
@@ -22,7 +24,6 @@ function App() {
       console.log("Please Install MetaMask");
     }
   } 
-  /*  const sendTransaction = async () => {}*/
     
   return (
     <div className="App">
