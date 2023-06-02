@@ -7,7 +7,7 @@ import React from 'react';
 /*import ErrorMessage from "./ErrorMessage";
 import TxList from "./TxList";*/
 
-const sendTransaction = async ({ setError, setTxs, ether, addr }) => {
+/*const sendTransaction = async ({ setError, setTxs, ether, addr }) => {
   try {
     from: accounts[0], // The user's active address.
     to: '0x058508d2ACFe10652072948A60B7286bd1acEC9d', // Required except during contract publications.
@@ -18,7 +18,7 @@ const sendTransaction = async ({ setError, setTxs, ether, addr }) => {
   } catch (err){
     setError(err.message);
   }
-};
+};*/
 
 function App() {
   let audio = new Audio("/Omar_Balance.mp3")
