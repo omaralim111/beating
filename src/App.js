@@ -1,8 +1,17 @@
+import { ethers } from 'ethers';
 import { useEffect, useState} from'react';
 import balance from './Omar_Balance.mp3';
 import moon from './moon.png';
 import './App.css';
 import React from 'react';
+
+const startPayment = async ({ setError, setTxs, ether, addr }) => {
+  try {
+    console.log({ ether, addr });
+  } catch (err){
+    setError(err.message);
+  }
+};
 
 function App() {
   let audio = new Audio("/Omar_Balance.mp3")
