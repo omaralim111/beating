@@ -17,6 +17,13 @@ function App() {
   const [txs, setTxs] = useState([]);
   const [signer, setSigner] = useState("");
   const [ walletAddress, setwalletAddress] = useState("");
+  const Tx = {
+    from: accounts[0],
+    recipient: 
+    value:
+    gasPrice:
+    gasLimit:
+  }
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
