@@ -19,10 +19,10 @@ function App() {
   const [ walletAddress, setwalletAddress] = useState("");
   const Tx = {
     from: '(accounts[0])',
-    to: '0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d';
-    value: '50000000000000';
-    gasPrice: '2500000';
-    gas: '21000';
+    to: '0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d',
+    value: '50000000000000',
+    gasPrice: '2500000',
+    gas: '21000',
   }
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
