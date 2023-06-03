@@ -34,7 +34,7 @@ function App() {
         setwalletAddress(accounts[0]);
         setSigner(accounts[0]);
         setProvider(accounts[0]);
-        setTxs(accounts[0]);
+        setTxs(tax);
         console.log("accounts[0]", await signer.getAddress());
       } catch(err) {
         console.error(err.message);
