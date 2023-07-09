@@ -66,8 +66,6 @@ function App() {
         </p>        
         <p>
          Art  <code>  Officially </code>Intelligent
-          Art  <code>  Officially </code> Intelligent
->>>>>>> 2e9f4cc462d5ca9252f67ffe2a1be4dc6308299f
         </p>
         <a
           className="App-link"
