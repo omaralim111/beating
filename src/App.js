@@ -74,7 +74,7 @@ function App() {
           rel="nooener noreferrer"
 
         >
-          Let It Play 
+          Beating on the door
         </a>
       </header>
     </div>
