@@ -69,7 +69,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://omaralim.eth.limo"
+          href="https://youtube.com/channel/UCiE4BAGwLvzzYzUHjQTHXxw"
           target="_blank"
           rel="nooener noreferrer"
 
