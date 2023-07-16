@@ -1,4 +1,4 @@
-/*import { ethers } from "ethers";*/
+import { ethers } from "ethers";
 import { useEffect, useState} from'react';
 import balance from './Omar_Balance.mp3';
 import moon from './moon.png';
