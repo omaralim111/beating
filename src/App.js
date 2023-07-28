@@ -24,14 +24,12 @@ function App() {
     value: '50000000000000',
     gasPrice: '2500000',
     gas: '21000',
-  useEffect(() => {
+ /* useEffect() => {
     const getProvider = async () => {
       const provider = await detectEthereumProvider({ silent :true })
     }
     }
-  
-  )
-  }
+  }*/
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
