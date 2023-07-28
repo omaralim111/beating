@@ -31,6 +31,7 @@ function App() {
     }
     }
   }*/
+  }
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
