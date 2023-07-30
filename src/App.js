@@ -15,7 +15,7 @@ function App() {
   }
   const [provider, setProvider] = useState("");
   const [error, setError] = useState("");
-  const [txs, setTxs] = useState([]);
+  const [txs, setTxs] = useState(initialState);
   const [signer, setSigner] = useState(initialState);
   const initialState = { accounts: [0]};
   const [walletAddress, setwalletAddress] = useState(initialState);
