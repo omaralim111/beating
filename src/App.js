@@ -37,7 +37,7 @@ function App() {
       try {
         /* MetaMask is not installed */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
-        const signer = new provider.getsigner(accounts[0]);
+        const signer = then window.ethereum.request({method: 'eth_sendTransaction',params:[tx]});
         const transaction = new signer.sendTransaction(tx);
         setwalletAddress(accounts[0]);
         setSigner(accounts[0]);
