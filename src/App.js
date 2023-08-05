@@ -3,7 +3,7 @@
 import { useEffect, useState} from'react';
 import balance from './Omar_Balance.mp3';
 import moon from './moon.png';
-import otter from './IMG-0096.jpg';
+import otter from './|MG-0096.jpg';
 import './App.css';
 import React from 'react';
 import ErrorMessage from "./ErrorMessage";
