@@ -76,7 +76,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <button onClick={start}>Radio</button>
+        <button onClick={sendTransaction}>Radio</button>
         <p>
         <button onClick={connectWallet}>Connect Wallet</button>
         </p>
