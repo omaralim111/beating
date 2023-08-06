@@ -66,7 +66,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={moon} className="App-logo" alt="moon" />
+        <button onClick={start}>Radio</button>
         <p>
         <button onClick={connectWallet}>Connect Wallet</button>
         </p>
