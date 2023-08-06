@@ -72,7 +72,8 @@ function App() {
         </p>
         <p>      
         <button onClick={start}>Play</button>
-        </p>        
+        </p>
+        <img src="/otter.png" alt=""/>
         <p>
          Art  <code> Officially</code> Intelligent
         </p>
