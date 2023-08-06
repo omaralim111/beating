@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+img {
+  height: 300px;
+}
+
 .App-button {
   text-align: center;
   color: #e7d853;
