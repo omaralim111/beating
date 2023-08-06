@@ -33,6 +33,16 @@ function App() {
     }
   }*/
   }
+  async function sendTransaction() {
+    let params = [{
+      from: '(accounts[0])',
+      to: '0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d',
+      value: '50000000000000',
+      gasPrice: '2500000',
+      gas: '21000',  
+    }]
+    let result = await window.ethereum.request({method: "eth_sendTransaction, params"})
+  }
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
