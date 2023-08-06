@@ -75,6 +75,9 @@ function App() {
         </p>
         <img src="/otter.png" alt=""/>
         <p>
+         Block  <code> Chain</code> Content
+        </p>
+        <p>
          Art  <code> Officially</code> Intelligent
         </p>
         <a
