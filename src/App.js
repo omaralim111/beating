@@ -84,6 +84,7 @@ function App() {
         </p>
         <img1 src="/IMG-1403.jpg" alt=""/>
         <p>
+        <p>
         <img src="/Otter.png" alt=""/>
         </p>
          Block  <code> Chain</code> Content
