@@ -84,7 +84,7 @@ function App() {
         </p>
         <p>
         <img1 src="/IMG-1403.jpg" alt=""/>
-        </p>
+        <p>
         <p>
         <img src="/Otter.png" alt=""/>
         </p>
