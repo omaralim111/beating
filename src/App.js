@@ -82,7 +82,6 @@ function App() {
         <p>      
         <button onClick={start}>Play</button>
         </p>
-        <p>
         <img1 src="/IMG-1403.jpg" alt=""/>
         <p>
         <p>
