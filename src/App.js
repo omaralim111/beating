@@ -75,7 +75,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
         <button onClick={sendTransaction}>Radio</button>
         <p>
         <button onClick={connectWallet}>Connect Wallet</button>
@@ -84,7 +83,7 @@ function App() {
         <button onClick={start}>Play</button>
         </p>
         <p>
-        <img src="/IMG-1403.jpg" alt="">
+        <img src="/IMG-1403.jpg" alt=""/>
         </p>
         <img src="/Otter.png" alt=""/>
         <p>
