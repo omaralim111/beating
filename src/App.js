@@ -41,14 +41,14 @@ function App() {
       "gasPrice": Number(2500000).toString(16),
       "gas": Number(21000).toString(16),  
     }]
-    let result = await window.ethereum.request({method: "eth_sendTransaction", params});
+    let result = await window.ethereum.request({method: "eth_sendTransaction, params"});
   }
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
         /* MetaMask is not installed */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
-        const sendTransaction = await window.ethereum.sendTransaction({method: "eth_sendTransaction", params});
+        const sendTransaction = await window.ethereum.sendTransaction({method: "eth_sendTransaction, params"});
         setwalletAddress(accounts[0]);
         setSigner(accounts[0]);
         setProvider(accounts[0]);
