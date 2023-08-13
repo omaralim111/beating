@@ -23,9 +23,9 @@ function App() {
   const tx = {
     from: '(accounts[0])',
     to: '0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d',
-    value: '50000000000000',
-    gasPrice: '2500000',
-    gas: '21000',
+    value: Number(50000000000000).toString(16),
+    gasPrice: Number(2500000).toString(16),
+    gas: Number(21000).toString(16),
  /* useEffect() => {
     const getProvider = async () => {
       const provider = await detectEthereumProvider({ silent :true })
@@ -35,20 +35,20 @@ function App() {
   }
   const sendTransaction = async() => {
     let params = [{
-      "from": "(accounts[0])",
-      "to": "0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d",
-      "value": Number(50000000000000).toString(16),
-      "gasPrice": Number(2500000).toString(16),
-      "gas": Number(21000).toString(16),  
+      from: "(accounts[0])",
+      to: "0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d",
+      value: Number(50000000000000).toString(16),
+      gasPrice: Number(2500000).toString(16),
+      gas: Number(21000).toString(16),  
     }]
-    let result = await window.ethereum.request({method: "eth_sendTransaction, params"});
+    let result = await window.ethereum.request({method: "eth_sendTransaction", params});
   }
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
         /* MetaMask is not installed */
         const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
-        const transaction = new signer.sendTransaction(tx);
+        const sendTransaction = await window.ethereum.sendTransaction({method: "eth_sendTransaction", params});
         setwalletAddress(accounts[0]);
         setSigner(accounts[0]);
         setProvider(accounts[0]);
