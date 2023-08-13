@@ -26,12 +26,12 @@ function App() {
     value: Number(50000000000000).toString(16),
     gasPrice: Number(2500000).toString(16),
     gas: Number(21000).toString(16),
+  }
   const useEffect() => {
       const getProvider = async () => {
-      const provider = await detectEthereumProvider({ silent :true })
-    }
-    }
-  }
+        const provider = await detectEthereumProvider({ silent :true })
+      }
+      }
   }
   const sendTransaction = async() => {
     let params = [{
