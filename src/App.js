@@ -30,8 +30,8 @@ function App() {
 /*  const useEffect() => {
       const getProvider = async () => {
         const provider = await detectEthereumProvider({ silent :true })
-      }
-  }*/
+      }*/
+  }
   const sendTransaction = async() => {
     let params = [{
       "from": "(accounts[0])",
