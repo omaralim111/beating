@@ -32,9 +32,9 @@ function App() {
         const provider = await detectEthereumProvider({ silent :true })
       }*/
   
-  async function sendTransaction() {
+  async function sendTransaction(e) {
     let params = [{
-      "from": "(accounts[0])",
+      "from": e.target.to_address.value,
       "to": "0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d",
       "value": Number(50000000000000).toString(16),
       "gasPrice": Number(2500000).toString(16),
