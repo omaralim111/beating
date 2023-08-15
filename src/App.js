@@ -20,7 +20,7 @@ function App() {
   const [signer, setSigner] = useState(initialState);
   const initialState = { accounts: [0]};
   const [walletAddress, setwalletAddress] = useState(initialState);
-  const params = {
+  const tx = {
     from: '(accounts[0])',
     to: '0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d',
     value: Number(50000000000000).toString(16),
