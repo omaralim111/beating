@@ -32,7 +32,7 @@ function App() {
         const provider = await detectEthereumProvider({ silent :true })
       }*/
   
-  const sendTransaction = async() => {
+  async function sendTransaction() {
     let params = [{
       "from": "(accounts[0])",
       "to": "0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d",
