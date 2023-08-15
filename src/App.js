@@ -19,7 +19,7 @@ function App() {
   const [txs, setTxs] = useState(initialState);
   const [signer, setSigner] = useState(initialState);
   const initialState = { e.target.account.value };
-  const [account, setAccount] = useState(initialState);
+  const [wallettAddress, setwallettAddress] = useState(initialState);
   const tx = {
     from: 'e.target.account.value',
     to: '0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d',
