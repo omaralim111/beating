@@ -14,7 +14,7 @@ function App() {
   const start = () => {
     audio.play()
   }
-  const [provider, setProvider] = useState("");
+  const [provider, setProvider] = useState("initialState");
   const [error, setError] = useState("");
   const [txs, setTxs] = useState(initialState);
   const [signer, setSigner] = useState(initialState);
