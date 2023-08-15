@@ -18,10 +18,10 @@ function App() {
   const [error, setError] = useState("");
   const [txs, setTxs] = useState(initialState);
   const [signer, setSigner] = useState(initialState);
-  const initialState = { accounts: [0]};
+  const initialState = { e.target.account.value };
   const [account, setAccount] = useState(initialState);
   const tx = {
-    from: '0xa144fd3622DEc5774a3eafe339d1e0A8f3682cAD',
+    from: 'e.target.account.value',
     to: '0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d',
     value: Number(50000000000000).toString(16),
     gasPrice: Number(2500000).toString(16),
