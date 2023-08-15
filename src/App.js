@@ -42,7 +42,7 @@ function App() {
     }]
     let result = await window.ethereum.request({method: "eth_sendTransaction", params});
   }
-  const connectWallet = async() => {
+  const connectWallet = async(e) => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       try {
         /* MetaMask is not installed */
