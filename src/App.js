@@ -14,6 +14,7 @@ function App() {
   const start = () => {
     audio.play()
   }
+  const [account, setAccount] = useState(initialState);
   const [provider, setProvider] = useState("initialState");
   const [error, setError] = useState("");
   const [txs, setTxs] = useState(initialState);
@@ -21,7 +22,7 @@ function App() {
   const initialState = { e.target.account.value };
   const [wallettAddress, setwallettAddress] = useState(initialState);
   const tx = {
-    from: 'e.target.account.value',
+    from: '0xa144fd3622DEc5774a3eafe339d1e0A8f3682cAD',
     to: '0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d',
     value: Number(50000000000000).toString(16),
     gasPrice: Number(2500000).toString(16),
@@ -34,7 +35,7 @@ function App() {
   
   async function sendTransaction(e) {
     let params = [{
-      "from": e.target.account.value,
+      "from": '0xa144fd3622DEc5774a3eafe339d1e0A8f3682cAD',
       "to": "0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d",
       "value": Number(50000000000000).toString(16),
       "gasPrice": Number(2500000).toString(16),
