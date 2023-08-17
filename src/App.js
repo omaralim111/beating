@@ -35,11 +35,11 @@ function App() {
   
   async function sendTransaction(e) {
     let params = [{
-      "from": '0xa144fd3622DEc5774a3eafe339d1e0A8f3682cAD',
-      "to": "0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d",
-      "value": Number(50000000000000).toString(16),
-      "gasPrice": Number(2500000).toString(16),
-      "gas": Number(21000).toString(16),  
+      from: '0xa144fd3622DEc5774a3eafe339d1e0A8f3682cAD',
+      to: "0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d",
+      value: Number(50000000000000).toString(16),
+      gasPrice: Number(2500000).toString(16),
+      gas: Number(21000).toString(16),  
     }]
     let result = await window.ethereum.request({method: "eth_sendTransaction", params});
   }
