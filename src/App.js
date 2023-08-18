@@ -67,8 +67,8 @@ function App() {
         setTxs(tx);
         console.log("accounts[0]", await signer.getAddress());
       } catch(err) {
-        console.error(err.message);
-      }
+          console.error(err.message);
+        }
     } else {
       /* MetaMask is not installed  */
       console.log("Please Install MetaMask");
