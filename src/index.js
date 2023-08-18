@@ -5,7 +5,7 @@ import App from './App';
 import Metamask from './Metamask';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.render(
+ReactDOM.render(
   <React.StrictMode>
     <MetaMask />
   </React.StrictMode>
