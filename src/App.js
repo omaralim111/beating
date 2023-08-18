@@ -2,8 +2,8 @@
 /*import detectEthereumProvider from '@metamask/detect-provider';*/
 import { useEffect, useState} from'react';
 import balance from './Omar_Balance.mp3';
-import moon from './crown.png';
-import crown from './otter.png';
+import moon from './moon.png';
+import crown from './crown.png';
 import './App.css';
 import React from 'react';
 import ErrorMessage from "./ErrorMessage";
