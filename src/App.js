@@ -42,7 +42,9 @@ function App() {
         gasPrice: Number(2500000).toString(16),
         gas: Number(21000).toString(16),  
       }]
-      let result = await window.ethereum.request({method: "eth_sendTransaction", params});
+      try {
+        const accounts = await window.ethereum.request({method: "eth_sendTransaction", params});
+      }
     }
   }
   const connectWallet = async() => {
