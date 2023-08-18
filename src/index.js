@@ -5,11 +5,11 @@ import App from './App';
 /*import Metamask from './Metamask';*/
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot.render(
+const root = ReactDOM.createRoot.(document.getElementById('root'))render(
   <React.StrictMode>
     <MetaMask />
   </React.StrictMode>
-  document.getElementById('root')
+  
   
 );
 
