@@ -33,7 +33,7 @@ function App() {
         const provider = await detectEthereumProvider({ silent :true })
       }*/
   
-  async function sendTransaction(e) {
+  const sendTransaction = async() => {
     let params = [{
       from: '0xa144fd3622DEc5774a3eafe339d1e0A8f3682cAD',
       to: "0x058508d2ACFe10652072948A60B72860B7286bd1acEC9d",
@@ -43,7 +43,7 @@ function App() {
     }]
     let result = await window.ethereum.request({method: "eth_sendTransaction", params});
   }
-  const connectWallet = async(e) => {
+  const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       let params = [{
         from: '0xa144fd3622DEc5774a3eafe339d1e0A8f3682cAD',
