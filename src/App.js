@@ -44,6 +44,7 @@ function App() {
       }]
       let result = await window.ethereum.request({method: "eth_sendTransaction", params});
     }
+  }
   const connectWallet = async() => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined"){
       let params = [{
