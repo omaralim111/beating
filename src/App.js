@@ -93,8 +93,6 @@ function App() {
         <p>
         <img src="/Otter.png" alt=""/>
         </p>
-        <button onClick={sendTransaction}>Radio</button>
-        <p>
          Block  <code> Chain</code> Content
         </p>
         <p>
