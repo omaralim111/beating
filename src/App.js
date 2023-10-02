@@ -2,6 +2,7 @@
 /*import detectEthereumProvider from '@metamask/detect-provider';*/
 import { useEffect, useState} from'react';
 import balance from './Omar_Balance.mp3';
+import beatin from 'Beatin on the door.mp3';
 import moon from './moon.png';
 /*import crown from './crown.png';*/
 import './App.css';
@@ -13,6 +14,10 @@ function App() {
   let audio = new Audio("/Omar_Balance.mp3")
   const start = () => {
     audio.play()
+  }
+  let audio1 = new Audio ("/Beatin on the door.mp3")
+  const start = () => {
+    audio1.play()
   }
   const [account, setAccount] = useState("initialState");
   const [provider, setProvider] = useState("initialState");
