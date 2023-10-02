@@ -10,7 +10,7 @@ import ErrorMessage from "./ErrorMessage";
 import TxList from "./TxList";
 
 function App() {
-  let audio = new Audio("/Omar_Balance.mp3")
+  let audio = new Audio("./Omar_Balance.mp3")
   const start = () => {
     audio.play()
   }
