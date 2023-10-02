@@ -2,7 +2,6 @@
 /*import detectEthereumProvider from '@metamask/detect-provider';*/
 import { useEffect, useState} from'react';
 import balance from './Omar_Balance.mp3';
-/*import beaten from './Beatin on the door.mp3';*/
 import moon from './moon.png';
 import crown from './crown.png';
 import './App.css';
@@ -15,10 +14,6 @@ function App() {
   const start = () => {
     audio.play()
   }
-  /*let audio = new Audio("/Beatin on the door.mp3")
-  const start = () => {
-    audio.play()
-  }*/
   const [account, setAccount] = useState("initialState");
   const [provider, setProvider] = useState("initialState");
   const [error, setError] = useState("initialState");
