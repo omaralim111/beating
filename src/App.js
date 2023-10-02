@@ -16,7 +16,7 @@ function App() {
     audio.play()
   }
   let audio1 = new Audio("/Beatin on the door.mp3")
-  const start = () => {
+  const start1 = () => {
     audio1.play()
   }
   const [account, setAccount] = useState("initialState");
