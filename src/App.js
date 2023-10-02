@@ -2,7 +2,7 @@
 /*import detectEthereumProvider from '@metamask/detect-provider';*/
 import { useEffect, useState} from'react';
 import balance from './Omar_Balance.mp3';
-import beatin from 'Beatin on the door.mp3';
+import beatin from '/Beatin on the door.mp3';
 import moon from './moon.png';
 /*import crown from './crown.png';*/
 import './App.css';
