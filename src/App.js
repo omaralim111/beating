@@ -13,6 +13,7 @@ function App() {
   const start = () => {
     audio.play()
   }
+  }
   const [account, setAccount] = useState("initialState");
   const [provider, setProvider] = useState("initialState");
   const [error, setError] = useState("initialState");
