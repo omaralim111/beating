@@ -89,21 +89,12 @@ function App() {
         </p>
         <p>
         <img src="/Otter.png" alt=""/img>
-        <p>
+        </p>
          Block  <code> Chain</code> Content
         </p>
         <p>
          Art  <code> Officially</code> Intelligent
         </p>
-        <a
-          className="App-link"
-          href="https://youtube.com/channel/UCiE4BAGwLvzzYzUHjQTHXxw"
-          target="_blank"
-          rel="nooener noreferrer"
-
-        >
-          Beating on the door
-        </a>
       </header>
     </div>
   );
