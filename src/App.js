@@ -89,7 +89,7 @@ function App() {
         </p>
         <p>
         <img src="/Otter.png" alt=""/img>
-        </p>
+        <p>
          Block  <code> Chain</code> Content
         </p>
         <p>
