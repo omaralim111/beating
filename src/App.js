@@ -9,7 +9,7 @@ import ErrorMessage from "./ErrorMessage";
 import TxList from "./TxList";
 
 function App() {
-  let audio = new Audio("./Omar_Balance.mp3")
+  let audio = new Audio("/Omar_Balance.mp3")
   const start = () => {
     audio.play()
   }
@@ -87,15 +87,22 @@ function App() {
         <p>      
         <button onClick={start}>Play</button>
         </p>
-        <p>
         <img src="/Otter.png" alt=""/img>
         </p>
-        <p>
          Block  <code> Chain</code> Content
         </p>
         <p>
          Art  <code> Officially</code> Intelligent
         </p>
+        >a
+          classname="App-link"
+          href="balance.omaralim.eth.limo"
+          target="_blank"
+          rel="nooner noreferrer"
+
+        >
+          Beating on the door
+        </a>            
       </header>
     </div>
   );
