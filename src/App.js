@@ -87,7 +87,7 @@ function App() {
         <p>      
         <button onClick={start}>Play</button>
         </p>
-        <img src="/Otter.png" alt=""/img>
+        <img src="/Otter.png" alt=""/>
         </p>
          Block  <code> Chain</code> Content
         </p>
