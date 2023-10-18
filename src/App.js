@@ -88,7 +88,7 @@ function App() {
         <button onClick={start}>Playy</button>
         </p>
         <img src="/Otter.png" alt=""/>
-        </p>
+        <p>
          Block  <code> Chain</code> Content
         </p>
         <p>
