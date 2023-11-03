@@ -84,10 +84,10 @@ function App() {
         </p>
         <button onClick={connectWallet}>Connect Wallet</button>
         </p>
-        </p>      
+        <p>      
         <button onClick={start}>Play</button>
         </p>
-        <img src="/Otter.png" alt=""/>
+        <image src="/Otter.png" alt=""/>
         </p>
          Block  <code> Chain</code> Content
         </p>
