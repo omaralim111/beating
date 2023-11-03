@@ -81,14 +81,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <button onClick={sendTransaction}>Radio</button>
-        <p>
+        </p>
         <button onClick={connectWallet}>Connect Wallet</button>
         </p>
-        <p>      
+        </p>      
         <button onClick={start}>Play</button>
         </p>
         <img src="/Otter.png" alt=""/>
-        <p>
+        </p>
          Block  <code> Chain</code> Content
         </p>
         <p>
