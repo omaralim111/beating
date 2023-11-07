@@ -95,7 +95,7 @@ function App() {
         <p>
          Art  <code> Officially</code> Intelligent
         </p>
-        >a
+         >a
           classname="App-link"
           href="balance.omaralim.eth.limo"
           target="_blank"
