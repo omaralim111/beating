@@ -35,7 +35,7 @@ function App() {
         gas: Number(21000).toString(16),  
       }]
       try {
-        const accounts = await window.ethereum.request({method: "eth_sendTransaction", params});
+        const accounts = await window.ethereum.request({method: "eth_sendTransaction, params"});
       } catch(err) {
         console.error(err.message);
       }
@@ -52,8 +52,8 @@ function App() {
       }]
       try {
         /* MetaMask is not installed */
-        const accounts = await window.ethereum.request({ method: "eth_requestAccounts"});
-        const result = await window.ethereum.request({method: "eth_sendTransaction, params"});
+        const accounts = await window.ethereum.request({ method: "eth_requestAccounts, params"});
+        const result = await window.ethereum.request({ method: "eth_sendTransaction, params"});
         setAccount(accounts[0]);
         setwalletAddress(accounts[0]);
         setSigner(accounts[0]);
