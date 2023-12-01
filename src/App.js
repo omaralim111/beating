@@ -80,6 +80,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <p>
         <button onClick={sendTransaction}>Radio</button>
         </p>
         <button onClick={connectWallet}>Connect Wallet</button>
