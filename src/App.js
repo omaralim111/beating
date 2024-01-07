@@ -85,7 +85,7 @@ function App() {
         </p>
         <button onClick={connectWallet}>Connect Wallet</button>
         </p>
-        <p>      
+        <p>
         <button onClick={start}>Play</button>
         <p>
         <p>
@@ -104,10 +104,10 @@ function App() {
 
         >
           Beating on the door
-        </a>            
+        </a>
       </header>
     </div>
   );
 }
-  
+
 export default App;
