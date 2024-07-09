@@ -87,7 +87,7 @@ function App() {
         <button onClick={connectWallet}>Connect Wallet</button>
         </p>
         <p>
-        <button onClick={start}>Play</button>
+        <button onClick={start}>Playy</button>
         <p>
         <p>
         <image src="/Otter.png" alt=""/>
