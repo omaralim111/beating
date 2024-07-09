@@ -7,6 +7,7 @@ import './App.css';
 import React from 'react';
 import ErrorMessage from "./ErrorMessage";
 import TxList from "./TxList";
+import Otter from "/Otter.png";
 
 function App() {
   let audio = new Audio("/Omar_Balance.mp3")
